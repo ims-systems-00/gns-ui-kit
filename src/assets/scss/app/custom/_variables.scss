@@ -1,6 +1,6 @@
 // color system
 
-// following colors are given custom names from iMS Systems and used to override default colors
+// following colors are given custom names from GNS and used to override default colors
 $gray-100: #f6f9fc !default;
 $gray-200: #e9ecef !default;
 $gray-300: #e3e3e3 !default;
@@ -12,31 +12,44 @@ $gray-800: #32325d !default; // Line heading color
 $gray-900: #212529 !default;
 $black: #000000 !default;
 $white: #ffffff !default;
-$primary: #1d8bf8 !default;
-$primary-dark: #1e66d2 !default;
-$primary-light: #bcdfff !default;
-$secondary: #6c757d !default;
-$secondary-dark: #54595e !default;
-$secondary-light: #dee2e6 !default;
-$secondary-extra-light: #f6f8fa !default;
+$primary: #3c00ff !default;
+$primary-dark: #3b09cf !default;
+$primary-light: #9b7bf9 !default;
+$primary-extra-light: #d4c7fd !default;
+$primary-extra-extra-light: #f1ecfe !default;
+$secondary: #d9ff00 !default;
+$secondary-dark: #beda22 !default;
+$secondary-light: #edfd95 !default;
+$secondary-extra-light: #f4ffb8 !default;
+$secondary-extra-extra-light: #fbffe1 !default;
+$tertiary-orange: #ff8596 !default;
+$tertiary-orange-dark: #f54c64 !default;
+$tertiary-orange-light: #ffc2cb !default;
+$tertiary-orange-extra-light: #ffdadf !default;
+$tertiary-orange-extra-extra-light: #feecef !default;
+$tertiary-cyan: #38d6ef !default;
+$tertiary-cyan-dark: #10afc7 !default;
+$tertiary-cyan-light: #80e5f5 !default;
+$tertiary-cyan-extra-light: #c9f4fb !default;
+$tertiary-cyan-extra-extra-light: #edfbfe !default;
 $success: #28a745 !default;
 $success-dark: #218838 !default;
 $danger: #ed3447 !default;
 $danger-dark: #c82333 !default;
 $permission: #439eed !default;
-$permission-dark: #1D8BF8 !default;
+$permission-dark: #1d8bf8 !default;
 $warning: #ffc107 !default;
-$warning-dark: #E0A800 !default;
-$info: #17A2B8 !default;
+$warning-dark: #e0a800 !default;
+$info: #17a2b8 !default;
 $info-dark: #138496 !default;
 $escalate: #d63384 !default;
-$escalate-dark: #AB296A !default;
-$type-dark: #152536 !default; //typography-heading
-$type-medium: #6c757d !default; //typography-body
-$type-light: #ced4da !default; //typography-light
+$escalate-dark: #ab296a !default;
+$type-dark: #2c2e21 !default; //typography-heading
+$type-medium: #808080 !default; //typography-body
+$type-light: #dee2e6 !default; //typography-light
 $stroke-dark: #152536 !default;
-$stroke-regular: #ced4da !default;
-$stroke-light: #dee2e6 !default;
+$stroke-regular: #bababa !default;
+$stroke-light: #e2e2e2 !default;
 $background-primary: #ffffff !default;
 $background-secondary: #ced4da !default;
 // bootstrap colors
@@ -185,7 +198,7 @@ $spacers: (
 $font-family-base: "Poppins", sans-serif !default;
 $font-family-alt: "Poppins", sans-serif !default;
 
-$font-size-dash: 0.875rem !default;
+$font-size-dash: 1rem !default;
 
 $font-size-base: $font-size-dash !default; // Assumes the browser default, typically `16px`
 // $font-size-xl: ($font-size-base * 1.4285);
@@ -195,12 +208,12 @@ $font-size-sm: ($font-size-base * 0.85714286);
 $font-size-xs: ($font-size-base * 0.714);
 $font-size-xxs: ($font-size-base * 0.625);
 
-$h1-font-size: ($font-size-base * 3.428) !default; //3rem
-$h2-font-size: ($font-size-base * 2.285) !default;
-$h3-font-size: ($font-size-base * 1.714) !default;
-$h4-font-size: ($font-size-base * 1.43) !default;
-$h5-font-size: ($font-size-base * 1.43) !default;
-$h6-font-size: ($font-size-base * 1.43) !default;
+$h1-font-size: ($font-size-base * 2.25) !default; //3rem
+$h2-font-size: ($font-size-base * 1.75) !default;
+$h3-font-size: ($font-size-base * 1.5) !default;
+$h4-font-size: ($font-size-base * 1.25) !default;
+$h5-font-size: ($font-size-base * 1) !default;
+$h6-font-size: ($font-size-base * 0.875) !default;
 
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -218,11 +231,12 @@ $headings-margin-bottom: 0;
 $headings-font-family: inherit !default;
 $headings-font-weight: $font-weight-normal !default;
 $headings-color: $type-dark !default;
-$h1-line-height: 72px !default;
-$h2-line-height: 48px !default;
-$h3-line-height: 36px !default;
-$h4-line-height: 30px !default;
-
+$h1-line-height: 44px !default;
+$h2-line-height: 34px !default;
+$h3-line-height: 29px !default;
+$h4-line-height: 24px !default;
+$h5-line-height: 20px !default;
+$h6-line-height: 17px !default;
 
 $heading-letter-spacing: 0.025em !default;
 $heading-font-size: 0.95rem !default;
@@ -426,9 +440,9 @@ $table-hover-bg: rgba($primary, $table-hover-bg-factor) !default;
 // $input-border-width:                    $input-btn-border-width !default;
 // $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
-$input-border-radius-sm:                $border-radius-sm !default;
-$input-border-radius-lg:                $border-radius-lg !default;
+$input-border-radius: $border-radius !default;
+$input-border-radius-sm: $border-radius-sm !default;
+$input-border-radius-lg: $border-radius-lg !default;
 
 // $input-focus-bg:                        $input-bg !default;
 // $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;

@@ -6,7 +6,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: `This component is built for quick rendering of simple tablular data the data. This the simplest version of iMS Systems tables`,
+        component: `This component is built for quick rendering of simple tablular data the data. This the simplest version of GNS tables`,
       },
     },
   },
