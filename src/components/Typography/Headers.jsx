@@ -1,4 +1,6 @@
 const Headers = (props) => {
+  //headers are of 6 types
+
   return (
     <>
       <h1>H1. this a GNS Headline </h1>

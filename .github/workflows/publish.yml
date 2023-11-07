@@ -4,7 +4,7 @@ on:
   release:
     types: [created]
   push:
-    branches: [master] 
+    branches: [master]
 
 jobs:
   publish:
@@ -21,6 +21,6 @@ jobs:
       - name: Build library
         run: npm run build
       - name: Publish to npm
-        run: | 
+        run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > .npmrc
           npm publish
