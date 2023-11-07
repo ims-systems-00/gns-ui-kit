@@ -1,3 +1,6 @@
+
+import './assets/css/avenir-font.css'; 
+
 export { default as Container } from "./components/Container/ContainerBase";
 export { default as Col } from "./components/Grid/ColBase";
 export { default as Row } from "./components/Grid/RowBase";
