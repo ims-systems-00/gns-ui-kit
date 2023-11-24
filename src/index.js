@@ -111,7 +111,7 @@ export { default as ImsInputDropZone } from "./components/Forms/ImsFormElements/
 export { default as ImsInputRadio } from "./components/Forms/ImsFormElements/ImsInputRadio";
 export { default as ImsInputSelect } from "./components/Forms/ImsFormElements/ImsInputSelect";
 export { default as ImsInputSelectWithIcon } from "./components/Forms/ImsFormElements/ImsInputSelectWithIcon";
-export { default as ImsInputText } from "./components/Forms/ImsFormElements/ImsInputText";
+// export { default as ImsInputText } from "./components/Forms/ImsFormElements/ImsInputText";
 export { default as ImsInputTextWithIcon } from "./components/Forms/ImsFormElements/ImsInputTextWithIcon";
 export { default as ImsInputTime } from "./components/Forms/ImsFormElements/ImsInputTime";
 export { default as ImsTextEditor } from "./components/Forms/ImsFormElements/ImsTextEditor";
