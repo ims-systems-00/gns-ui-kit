@@ -1,5 +1,5 @@
 import { addons } from "@storybook/addons";
-import gnsTheme from "./gnsTheme";
+import imsTheme from "./imsTheme";
 addons.setConfig({
-  theme: gnsTheme,
+  theme: imsTheme,
 });

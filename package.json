@@ -1,6 +1,6 @@
 {
   "name": "gns-ui-kit",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "source": "src/index.js",
   "files": [
     "dist",
@@ -113,7 +113,7 @@
   "browser": {
     "joi": "joi-browser"
   },
-  "description": "Here we have listed all our design system files where. This design system is exported for various products of iMS Systems. Change in this deisgn system would reflect change accross all products of iMS Systems. The design system\r is a customised version of bootstrap so bootstrap customisation docs and guidelines are followed for building the\r components for the system.",
+  "description": "Here we have listed all our design system files where. This deisgn system is exported for various products of iMS Systems. Change in this deisgn system would reflect change accross all products of iMS Systems. The design system\r is a customised version of bootstrap so bootstrap customisation docs and guidelines are followed for building the\r components for the system.",
   "repository": {
     "type": "git",
     "url": "https://github.com/ims-systems-00/gns-ui-kit.git"
