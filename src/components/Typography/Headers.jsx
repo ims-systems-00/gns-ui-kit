@@ -1,5 +1,4 @@
 const Headers = (props) => {
-  //headers are of 6 types
 
   return (
     <>
@@ -17,7 +16,7 @@ Headers.parameters = {
   docs: {
     description: {
       story: `
-It is recomended to use the only 4 tags (h1-h4) how it's shown in the examples. Ignore other (h4-h6) tags whilst you are builing the UI.
+It is recommended to use the only 4 tags (h1-h4) how it's shown in the examples. Ignore other (h4-h6) tags whilst you are builing the UI.
 `,
     },
   },
