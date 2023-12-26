@@ -18,7 +18,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: `This component is built for quick rendering of simple tablular data the data. This the simplest version of GNS tables`,
+        component: `This component is built for quick rendering of simple tablular data the data. This the simplest version of iMS Systems tables`,
       },
     },
   },
@@ -208,6 +208,22 @@ Default.args = {
       >
         <i class="fa-solid fa-edit me-2 p-0" />
         Create
+      </Button>
+    </React.Fragment>
+  ),
+  filterToolbar: (
+    <React.Fragment>
+      <Button
+        color="secondary"
+        outline
+        size="md"
+        className="shadow-sm--hover"
+        onClick={() => {
+          alert("Create A filter component");
+        }}
+      >
+        <i class="fa-solid fa-filter me-2 p-0"/>
+        Filter
       </Button>
     </React.Fragment>
   ),

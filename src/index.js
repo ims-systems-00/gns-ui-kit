@@ -1,5 +1,3 @@
-
-import './assets/css/avenir-font.css';
 export { default as Container } from "./components/Container/ContainerBase";
 export { default as Col } from "./components/Grid/ColBase";
 export { default as Row } from "./components/Grid/RowBase";
@@ -128,6 +126,9 @@ export { DrawerRight } from "./components/Drawer/index";
 export { DrawerOpener } from "./components/Drawer/index";
 export { DrawerContextProvider } from "./components/Drawer/index";
 export { useDrawer } from "./components/Drawer/index";
+/**
+ * utility hooks for ims systems UI stack
+ */
 export { default as useAPIError } from "./hooks/error/index";
 export { default as useQuery } from "./hooks/useQuery/index";
 export { default as useForm } from "./hooks/useForm";
