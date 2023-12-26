@@ -9,7 +9,7 @@ const sorts = [
   },
   {
     value: { mitigated: { status: false } },
-    label: "By score",
+    label: "By sore",
     tableState: tables.open,
   },
   {

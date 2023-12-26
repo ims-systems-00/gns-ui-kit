@@ -19,15 +19,17 @@ const FilterAndSearch = ({
   isFilterable,
   hasBulkActions,
   isSortable,
+  filters = [],
   sorts = [],
   tableToolbar,
-  filterToolbar,
   title = "",
 }) => {
   let [filterLabel, setFilterLabel] = React.useState("");
   let [sortLabel, setSortLabel] = React.useState("");
   let [searchString, setSearchString] = React.useState("");
   const debouncedSearchString = useDebounce(searchString, 500);
+  const [filterDropdownOpen, setFilterDropdownOpen] = React.useState(false);
+  const filterToggle = () => setFilterDropdownOpen(!filterDropdownOpen);
   const [sortDropdownOpen, setSortDropdownOpen] = React.useState(false);
   const sortToggle = () => setSortDropdownOpen(!sortDropdownOpen);
   React.useEffect(() => {
@@ -76,9 +78,39 @@ const FilterAndSearch = ({
               </div>
             )}
             <div className="d-flex create-filter-wrapper">
-              {isFilterable && filterToolbar && (
+              {isFilterable && (
                 <div className="me-md-3 mr-md-3 create-filer">
-                  {filterToolbar}
+                  <Dropdown isOpen={filterDropdownOpen} toggle={filterToggle}>
+                    <DropdownToggle
+                      className="filter"
+                      color="secondary"
+                      outline
+                      size="md"
+                    >
+                      <i class="fa-solid fa-filter me-2 mr-2 p-0 shadow-sm--hover" />
+                      {filterLabel ? filterLabel : "Filter"}
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      {filters &&
+                        filters.length > 0 &&
+                        filters.map((filter) => (
+                          <DropdownItem
+                            style={{
+                              fontWeight: "500",
+                              fontSize: "14px",
+                              color: "#152536",
+                            }}
+                            onClick={() => {
+                              setFilterLabel(filter.label);
+                              onFilter(filter);
+                            }}
+                            className="d-flex align-items-center fw-bold my-2"
+                          >
+                            {filter.label}
+                          </DropdownItem>
+                        ))}
+                    </DropdownMenu>
+                  </Dropdown>
                 </div>
               )}
             </div>
@@ -95,7 +127,7 @@ const FilterAndSearch = ({
                       <i class="fa-solid fa-sort me-2 mr-2 p-0 shadow-sm--hover" />
                       {sortLabel ? sortLabel : "Sort"}
                     </DropdownToggle>
-                    <DropdownMenu className="mt-3">
+                    <DropdownMenu>
                       {sorts &&
                         sorts.length > 0 &&
                         sorts.map((sort) => (
